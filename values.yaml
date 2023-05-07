@@ -1,0 +1,14 @@
+OperationsCenter:
+  CasC:
+    Enabled: true
+  ContainerEnv:
+    - name: SECRETS
+      value: /var/run/secrets/cjoc
+  ExtraVolumes:
+    - name: oc-secrets
+      secret:
+        secretName: oc-secrets
+  ExtraVolumeMounts:
+    - name: oc-secrets
+      mountPath: /var/run/secrets/cjoc
+      readOnly: true

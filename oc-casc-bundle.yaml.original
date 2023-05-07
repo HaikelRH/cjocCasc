@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oc-casc-bundle
+  namespace: default
+data:
+  bundle.yaml: |
+    # bundle.yaml file content
+  jenkins.yaml: |
+    # jenkins.yaml file content
+  plugins.yaml: |
+    # plugins.yaml file content
+  items.yaml: |
+    # item.yaml file content
+  rbac.yaml: |
+    # rbac.yaml file content
